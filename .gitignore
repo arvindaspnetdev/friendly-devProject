@@ -1,0 +1,5 @@
+
+*.config
+*.config
+*.ide-shm
+*.ide-wal
