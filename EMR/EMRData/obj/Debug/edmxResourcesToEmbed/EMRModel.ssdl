@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EMRDataModelContainer.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Claims">
+    <Key>
+      <PropertyRef Name="ClaimID" />
+    </Key>
+    <Property Name="ClaimID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SentDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RecievedDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ClinicCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ROI" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PatientID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employers">
+    <Key>
+      <PropertyRef Name="EmployerID" />
+    </Key>
+    <Property Name="EmployerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PatientID" Type="int" Nullable="false" />
+    <Property Name="EmployerName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address2" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="State" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="County" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ZIP" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Country" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Industry" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Patients">
+    <Key>
+      <PropertyRef Name="PatientID" />
+    </Key>
+    <Property Name="PatientID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DOB" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MedicalRecordNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address2" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="State" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ZIP" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="County" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Country" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CellPhone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Physician" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Gurrantor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Spouse" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Father" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mother" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EmergencyContact" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SecondaryName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MaidenName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Confidential" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MaritalStatus" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Smoker" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PrivacyNotice" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Military" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Race" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Religion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Isolation" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BirthPlace" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Ethinicity" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Language" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Indigent" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DNR" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ExpiredDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PatientNote" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SocialInsuranceNumber" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Policies">
+    <Key>
+      <PropertyRef Name="PolicyID" />
+    </Key>
+    <Property Name="PolicyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProviderID" Type="int" Nullable="false" />
+    <Property Name="ContractNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Primary" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GroupInfo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DirectPay" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BenefitsDetails" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PayerID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FullDays" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CODays" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LifeDays" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BloodDeduct" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PartADeduct" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="COPayRate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="COPayLimit" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SemiPrivateRate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PerDimeRate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LifeDaysUsed" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CoveredDays" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NonCovDays" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CoDaysUsed" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EffectiveDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CoveragePercentage" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DateCareEnded" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CoveredRoomRate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PriorPayment" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PriorPaymentCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SpecialProgramID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EPSDTReferralGiven" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EPSDTCCC" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PSROApprovalForm" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PSROApprovalTo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LTCHCoverageEnd" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DelayReason" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProviderProviderID" Type="int" Nullable="false" />
+    <Property Name="ProviderProviderID1" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Providers">
+    <Key>
+      <PropertyRef Name="ProviderID" />
+    </Key>
+    <Property Name="ProviderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PatientID" Type="int" Nullable="false" />
+    <Property Name="ProviderName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address2" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="State" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="County" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ZIP" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Country" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Contact" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Visits">
+    <Key>
+      <PropertyRef Name="VisitID" />
+    </Key>
+    <Property Name="VisitID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="From" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="To" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Service" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Balance" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PatientID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PatientClaim">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Claims" Type="Self.Claims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="Claims">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PatientEmployer">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Employers" Type="Self.Employers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="Employers">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PatientProvider">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="1" />
+    <End Role="Providers" Type="Self.Providers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="Providers">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PatientVisit">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Visits" Type="Self.Visits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="Visits">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProviderPolicy">
+    <End Role="Providers" Type="Self.Providers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Policies" Type="Self.Policies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Providers">
+        <PropertyRef Name="ProviderID" />
+      </Principal>
+      <Dependent Role="Policies">
+        <PropertyRef Name="ProviderProviderID1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="ShowPatient" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="EMRDataModelContainerStoreContainer">
+    <EntitySet Name="Claims" EntityType="Self.Claims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employers" EntityType="Self.Employers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Patients" EntityType="Self.Patients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Policies" EntityType="Self.Policies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Providers" EntityType="Self.Providers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Visits" EntityType="Self.Visits" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_PatientClaim" Association="Self.FK_PatientClaim">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Claims" EntitySet="Claims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PatientEmployer" Association="Self.FK_PatientEmployer">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Employers" EntitySet="Employers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PatientProvider" Association="Self.FK_PatientProvider">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Providers" EntitySet="Providers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PatientVisit" Association="Self.FK_PatientVisit">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Visits" EntitySet="Visits" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProviderPolicy" Association="Self.FK_ProviderPolicy">
+      <End Role="Providers" EntitySet="Providers" />
+      <End Role="Policies" EntitySet="Policies" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

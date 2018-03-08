@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EMRDataModelContainerStoreContainer" CdmEntityContainer="EMREntities">
+    <EntitySetMapping Name="Claims">
+      <EntityTypeMapping TypeName="EMRDataModelContainer.Claim">
+        <MappingFragment StoreEntitySet="Claims">
+          <ScalarProperty Name="ClaimID" ColumnName="ClaimID" />
+          <ScalarProperty Name="SentDate" ColumnName="SentDate" />
+          <ScalarProperty Name="RecievedDate" ColumnName="RecievedDate" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="ClinicCode" ColumnName="ClinicCode" />
+          <ScalarProperty Name="ROI" ColumnName="ROI" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employers">
+      <EntityTypeMapping TypeName="EMRDataModelContainer.Employer">
+        <MappingFragment StoreEntitySet="Employers">
+          <ScalarProperty Name="EmployerID" ColumnName="EmployerID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="EmployerName" ColumnName="EmployerName" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Industry" ColumnName="Industry" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="EMRDataModelContainer.Patient">
+        <MappingFragment StoreEntitySet="Patients">
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="MedicalRecordNumber" ColumnName="MedicalRecordNumber" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Physician" ColumnName="Physician" />
+          <ScalarProperty Name="Gurrantor" ColumnName="Gurrantor" />
+          <ScalarProperty Name="Spouse" ColumnName="Spouse" />
+          <ScalarProperty Name="Father" ColumnName="Father" />
+          <ScalarProperty Name="Mother" ColumnName="Mother" />
+          <ScalarProperty Name="EmergencyContact" ColumnName="EmergencyContact" />
+          <ScalarProperty Name="SecondaryName" ColumnName="SecondaryName" />
+          <ScalarProperty Name="MaidenName" ColumnName="MaidenName" />
+          <ScalarProperty Name="Confidential" ColumnName="Confidential" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="Smoker" ColumnName="Smoker" />
+          <ScalarProperty Name="PrivacyNotice" ColumnName="PrivacyNotice" />
+          <ScalarProperty Name="Military" ColumnName="Military" />
+          <ScalarProperty Name="Race" ColumnName="Race" />
+          <ScalarProperty Name="Religion" ColumnName="Religion" />
+          <ScalarProperty Name="Isolation" ColumnName="Isolation" />
+          <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
+          <ScalarProperty Name="Ethinicity" ColumnName="Ethinicity" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Indigent" ColumnName="Indigent" />
+          <ScalarProperty Name="DNR" ColumnName="DNR" />
+          <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
+          <ScalarProperty Name="PatientNote" ColumnName="PatientNote" />
+          <ScalarProperty Name="SocialInsuranceNumber" ColumnName="SocialInsuranceNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Policies">
+      <EntityTypeMapping TypeName="EMRDataModelContainer.Policy">
+        <MappingFragment StoreEntitySet="Policies">
+          <ScalarProperty Name="PolicyID" ColumnName="PolicyID" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="ContractNumber" ColumnName="ContractNumber" />
+          <ScalarProperty Name="Primary" ColumnName="Primary" />
+          <ScalarProperty Name="GroupInfo" ColumnName="GroupInfo" />
+          <ScalarProperty Name="DirectPay" ColumnName="DirectPay" />
+          <ScalarProperty Name="BenefitsDetails" ColumnName="BenefitsDetails" />
+          <ScalarProperty Name="PayerID" ColumnName="PayerID" />
+          <ScalarProperty Name="FullDays" ColumnName="FullDays" />
+          <ScalarProperty Name="CODays" ColumnName="CODays" />
+          <ScalarProperty Name="LifeDays" ColumnName="LifeDays" />
+          <ScalarProperty Name="BloodDeduct" ColumnName="BloodDeduct" />
+          <ScalarProperty Name="PartADeduct" ColumnName="PartADeduct" />
+          <ScalarProperty Name="COPayRate" ColumnName="COPayRate" />
+          <ScalarProperty Name="COPayLimit" ColumnName="COPayLimit" />
+          <ScalarProperty Name="SemiPrivateRate" ColumnName="SemiPrivateRate" />
+          <ScalarProperty Name="PerDimeRate" ColumnName="PerDimeRate" />
+          <ScalarProperty Name="LifeDaysUsed" ColumnName="LifeDaysUsed" />
+          <ScalarProperty Name="CoveredDays" ColumnName="CoveredDays" />
+          <ScalarProperty Name="NonCovDays" ColumnName="NonCovDays" />
+          <ScalarProperty Name="CoDaysUsed" ColumnName="CoDaysUsed" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="CoveragePercentage" ColumnName="CoveragePercentage" />
+          <ScalarProperty Name="DateCareEnded" ColumnName="DateCareEnded" />
+          <ScalarProperty Name="CoveredRoomRate" ColumnName="CoveredRoomRate" />
+          <ScalarProperty Name="PriorPayment" ColumnName="PriorPayment" />
+          <ScalarProperty Name="PriorPaymentCode" ColumnName="PriorPaymentCode" />
+          <ScalarProperty Name="SpecialProgramID" ColumnName="SpecialProgramID" />
+          <ScalarProperty Name="EPSDTReferralGiven" ColumnName="EPSDTReferralGiven" />
+          <ScalarProperty Name="EPSDTCCC" ColumnName="EPSDTCCC" />
+          <ScalarProperty Name="PSROApprovalForm" ColumnName="PSROApprovalForm" />
+          <ScalarProperty Name="PSROApprovalTo" ColumnName="PSROApprovalTo" />
+          <ScalarProperty Name="LTCHCoverageEnd" ColumnName="LTCHCoverageEnd" />
+          <ScalarProperty Name="DelayReason" ColumnName="DelayReason" />
+          <ScalarProperty Name="ProviderProviderID" ColumnName="ProviderProviderID" />
+          <ScalarProperty Name="ProviderProviderID1" ColumnName="ProviderProviderID1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Providers">
+      <EntityTypeMapping TypeName="EMRDataModelContainer.Provider">
+        <MappingFragment StoreEntitySet="Providers">
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="ProviderName" ColumnName="ProviderName" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Visits">
+      <EntityTypeMapping TypeName="EMRDataModelContainer.Visit">
+        <MappingFragment StoreEntitySet="Visits">
+          <ScalarProperty Name="VisitID" ColumnName="VisitID" />
+          <ScalarProperty Name="From" ColumnName="From" />
+          <ScalarProperty Name="To" ColumnName="To" />
+          <ScalarProperty Name="Service" ColumnName="Service" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ShowPatient" FunctionName="EMRDataModelContainer.Store.ShowPatient">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EMRDataModelContainer.ShowPatient_Result">
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="MedicalRecordNumber" ColumnName="MedicalRecordNumber" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Physician" ColumnName="Physician" />
+          <ScalarProperty Name="Gurrantor" ColumnName="Gurrantor" />
+          <ScalarProperty Name="Spouse" ColumnName="Spouse" />
+          <ScalarProperty Name="Father" ColumnName="Father" />
+          <ScalarProperty Name="Mother" ColumnName="Mother" />
+          <ScalarProperty Name="EmergencyContact" ColumnName="EmergencyContact" />
+          <ScalarProperty Name="SecondaryName" ColumnName="SecondaryName" />
+          <ScalarProperty Name="MaidenName" ColumnName="MaidenName" />
+          <ScalarProperty Name="Confidential" ColumnName="Confidential" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="Smoker" ColumnName="Smoker" />
+          <ScalarProperty Name="PrivacyNotice" ColumnName="PrivacyNotice" />
+          <ScalarProperty Name="Military" ColumnName="Military" />
+          <ScalarProperty Name="Race" ColumnName="Race" />
+          <ScalarProperty Name="Religion" ColumnName="Religion" />
+          <ScalarProperty Name="Isolation" ColumnName="Isolation" />
+          <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
+          <ScalarProperty Name="Ethinicity" ColumnName="Ethinicity" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Indigent" ColumnName="Indigent" />
+          <ScalarProperty Name="DNR" ColumnName="DNR" />
+          <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
+          <ScalarProperty Name="PatientNote" ColumnName="PatientNote" />
+          <ScalarProperty Name="SocialInsuranceNumber" ColumnName="SocialInsuranceNumber" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
