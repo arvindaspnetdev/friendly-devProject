@@ -226,7 +226,7 @@ table.dataTable thead .sorting_desc_disabled {
     padding-bottom: 10px;
     background-color: #fff0c9;
 }
-card-table tbody tr td {
+.card-table tbody tr td {
     padding-top: 7px;
     padding-bottom: 7px;
 }
