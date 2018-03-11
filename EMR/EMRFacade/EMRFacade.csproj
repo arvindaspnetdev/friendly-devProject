@@ -207,12 +207,16 @@
     <Content Include="assets\img\slack.png" />
     <Content Include="assets\img\user-profile-display.png" />
     <Content Include="assets\js\app.js" />
+    <Content Include="assets\js\app\patientlist.js" />
     <Content Include="assets\lib\bootstrap-slider\bootstrap-slider.min.js" />
     <Content Include="assets\lib\bootstrap-slider\css\bootstrap-slider.min.css" />
     <Content Include="assets\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
     <Content Include="assets\lib\chartjs\Chart.min.js" />
     <Content Include="assets\lib\countup\countUp.min.js" />
     <Content Include="assets\lib\datatables\datatables.net-bs4\css\dataTables.bootstrap4.css" />
+    <Content Include="assets\lib\datatables\datatables.net-bs4\img\sort_asc.png" />
+    <Content Include="assets\lib\datatables\datatables.net-bs4\img\sort_both.png" />
+    <Content Include="assets\lib\datatables\datatables.net-bs4\img\sort_desc.png" />
     <Content Include="assets\lib\datatables\datatables.net-bs4\js\dataTables.bootstrap4.js" />
     <Content Include="assets\lib\datatables\datatables.net-buttons-bs4\js\buttons.bootstrap4.min.js" />
     <Content Include="assets\lib\datatables\datatables.net-buttons\js\buttons.colVis.min.js" />
