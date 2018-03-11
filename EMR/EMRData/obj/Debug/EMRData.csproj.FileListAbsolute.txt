@@ -10,3 +10,14 @@ D:\Project\Arvind\Work\EMR\EMRData\obj\Debug\EMRData.csproj.CopyComplete
 D:\Project\Arvind\Work\EMR\EMRData\obj\Debug\EMRData.dll
 D:\Project\Arvind\Work\EMR\EMRData\obj\Debug\EMRData.pdb
 D:\Project\Arvind\Work\EMR\EMRData\obj\Debug\EMRData.csprojResolveAssemblyReference.cache
+E:\friendly-devProject\EMR\EMRData\bin\Debug\EMRData.dll.config
+E:\friendly-devProject\EMR\EMRData\bin\Debug\EMRData.dll
+E:\friendly-devProject\EMR\EMRData\bin\Debug\EMRData.pdb
+E:\friendly-devProject\EMR\EMRData\bin\Debug\EntityFramework.dll
+E:\friendly-devProject\EMR\EMRData\bin\Debug\EntityFramework.SqlServer.dll
+E:\friendly-devProject\EMR\EMRData\bin\Debug\EntityFramework.xml
+E:\friendly-devProject\EMR\EMRData\bin\Debug\EntityFramework.SqlServer.xml
+E:\friendly-devProject\EMR\EMRData\obj\Debug\EMRData.csprojResolveAssemblyReference.cache
+E:\friendly-devProject\EMR\EMRData\obj\Debug\EMRData.csproj.CoreCompileInputs.cache
+E:\friendly-devProject\EMR\EMRData\obj\Debug\EMRData.dll
+E:\friendly-devProject\EMR\EMRData\obj\Debug\EMRData.pdb
