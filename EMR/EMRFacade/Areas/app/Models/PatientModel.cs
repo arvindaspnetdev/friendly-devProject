@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace EMRFacade.Areas.Patients.Models
+namespace EMRFacade.Areas.app.Models
 {
     public class PatientModel
     {

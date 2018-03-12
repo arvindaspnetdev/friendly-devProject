@@ -28,7 +28,6 @@ D:\Project\Arvind\friendly-devProject\EMR\EMRData\bin\Debug\EntityFramework.dll
 D:\Project\Arvind\friendly-devProject\EMR\EMRData\bin\Debug\EntityFramework.SqlServer.dll
 D:\Project\Arvind\friendly-devProject\EMR\EMRData\bin\Debug\EntityFramework.xml
 D:\Project\Arvind\friendly-devProject\EMR\EMRData\bin\Debug\EntityFramework.SqlServer.xml
-D:\Project\Arvind\friendly-devProject\EMR\EMRData\obj\Debug\EMRData.csprojResolveAssemblyReference.cache
 D:\Project\Arvind\friendly-devProject\EMR\EMRData\obj\Debug\EMRData.csproj.CoreCompileInputs.cache
 D:\Project\Arvind\friendly-devProject\EMR\EMRData\obj\Debug\EMRData.csproj.CopyComplete
 D:\Project\Arvind\friendly-devProject\EMR\EMRData\obj\Debug\EMRData.dll

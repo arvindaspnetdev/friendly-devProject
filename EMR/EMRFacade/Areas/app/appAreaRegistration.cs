@@ -1,22 +1,22 @@
 ﻿using System.Web.Mvc;
 
-namespace EMRFacade.Areas.Patients
+namespace EMRFacade.Areas.app
 {
-    public class PatientsAreaRegistration : AreaRegistration 
+    public class appAreaRegistration : AreaRegistration 
     {
         public override string AreaName 
         {
             get 
             {
-                return "Patients";
+                return "app";
             }
         }
 
         public override void RegisterArea(AreaRegistrationContext context) 
         {
             context.MapRoute(
-                "Patients_default",
-                "Patients/{controller}/{action}/{id}",
+                "app_default",
+                "app/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
             );
         }
