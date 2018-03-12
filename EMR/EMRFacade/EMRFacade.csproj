@@ -158,9 +158,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\Patients\Controllers\PatientController.cs" />
-    <Compile Include="Areas\Patients\Models\PatientModel.cs" />
-    <Compile Include="Areas\Patients\PatientsAreaRegistration.cs" />
+    <Compile Include="Areas\app\appAreaRegistration.cs" />
+    <Compile Include="Areas\app\Controllers\PatientController.cs" />
+    <Compile Include="Areas\app\Models\PatientModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -170,6 +170,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\app\Views\_ViewStart.cshtml" />
     <Content Include="assets\css\app.css" />
     <Content Include="assets\img\140x140.png" />
     <Content Include="assets\img\404-bg.png" />
@@ -384,10 +385,8 @@
     <Content Include="assets\lib\summernote\font\summernote.eot" />
     <Content Include="assets\lib\summernote\font\summernote.ttf" />
     <Content Include="assets\lib\summernote\font\summernote.woff" />
-    <Content Include="Areas\Patients\Views\web.config" />
-    <Content Include="Areas\Patients\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Patients\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Patients\Views\Patient\Index.cshtml" />
+    <Content Include="Areas\app\Views\Patient\Index.cshtml" />
+    <Content Include="Areas\app\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -413,10 +412,15 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Navigation.cshtml" />
+    <Content Include="Views\Shared\_TopNavigation.cshtml" />
+    <Content Include="Views\Shared\_RightNavigation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\app\Views\Shared\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

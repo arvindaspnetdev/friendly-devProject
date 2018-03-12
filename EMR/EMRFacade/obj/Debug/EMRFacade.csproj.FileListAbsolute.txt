@@ -292,7 +292,6 @@ D:\Project\Arvind\friendly-devProject\EMR\EMRFacade\bin\Microsoft.AI.DependencyC
 D:\Project\Arvind\friendly-devProject\EMR\EMRFacade\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\Project\Arvind\friendly-devProject\EMR\EMRFacade\bin\Microsoft.AI.WindowsServer.xml
 D:\Project\Arvind\friendly-devProject\EMR\EMRFacade\bin\Microsoft.AI.Web.xml
-D:\Project\Arvind\friendly-devProject\EMR\EMRFacade\obj\Debug\EMRFacade.csprojResolveAssemblyReference.cache
 D:\Project\Arvind\friendly-devProject\EMR\EMRFacade\obj\Debug\EMRFacade.csproj.CoreCompileInputs.cache
 D:\Project\Arvind\friendly-devProject\EMR\EMRFacade\obj\Debug\EMRFacade.csproj.CopyComplete
 D:\Project\Arvind\friendly-devProject\EMR\EMRFacade\obj\Debug\EMRFacade.dll

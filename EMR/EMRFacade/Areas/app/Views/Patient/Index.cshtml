@@ -1,4 +1,4 @@
-﻿@model IEnumerable<EMRFacade.Areas.Patients.Models.PatientViewModel>
+﻿@model IEnumerable<EMRFacade.Areas.app.Models.PatientViewModel>
 @{
     ViewBag.Title = "List";
 }
@@ -16,6 +16,21 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="card card-table">
+                <div class="card-header">
+                    <div class="form-group row">
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" name="SearchText" id="SearchText" placeholder="Patient Search...">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-primary">Go!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <button class="btn btn-default">More Filters</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="card-body">
                     <table id="tblpatient" class="table table-striped table-hover">
                         <thead>
@@ -30,25 +45,25 @@
                         </thead>
                         <tbody>
                             @if (Model != null && Model.Any())
-                            {
-                                foreach (var item in Model)
-                                {
-                                    <tr>
-                                        <td>@item.FullName</td>
-                                        <td>@item.DOB</td>
-                                        <td>@item.MedicalRecordNumber</td>
-                                        <td>@item.Gender</td>
-                                        <td>@item.Phone</td>
-                                        <td>@item.Email</td>
-                                    </tr>
-                                }
-                            }
-                            else
-                            {
-                                <tr>
-                                    <td colspan="6" class="text-center">No Data Found!</td>
-                                </tr>
-                            }
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.FullName</td>
+                            <td>@item.DOB</td>
+                            <td>@item.MedicalRecordNumber</td>
+                            <td>@item.Gender</td>
+                            <td>@item.Phone</td>
+                            <td>@item.Email</td>
+                        </tr>
+        }
+    }
+    else
+    {
+            <tr>
+                <td colspan="6" class="text-center">No Data Found!</td>
+            </tr>
+}
                         </tbody>
                     </table>
                 </div>
